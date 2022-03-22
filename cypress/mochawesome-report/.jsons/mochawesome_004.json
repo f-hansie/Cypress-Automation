@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-16T09:56:14.054Z",
+    "end": "2022-03-16T09:56:18.084Z",
+    "duration": 4030,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eae66b64-c3e7-4581-b0d5-5d233f498f60",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SauceDemoTest.js",
+      "file": "cypress/integration/examples/SauceDemoTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1486e41d-3a2f-4a0f-ac48-5b811ac8a7cf",
+          "title": "Login to sauce demo website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Login to sauce demo website",
+              "fullTitle": "Login to sauce demo website Valid Login to sauce demo website",
+              "timedOut": null,
+              "duration": 2217,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/'); //launch the URL\ncy.get('#user-name').should('be.visible').type('standard_user');\ncy.get('#password').should('be.visible').type('secret_sauce');\ncy.get('#login-button').should('be.visible', {\n  delay: 100\n}).click();\ncy.url().should('eq', 'https://www.saucedemo.com/inventory.html', {\n  delay: 200\n}); //verify you landed on home page",
+              "err": {},
+              "uuid": "718dcaae-2c87-40e7-9906-b6e4819206ae",
+              "parentUUID": "1486e41d-3a2f-4a0f-ac48-5b811ac8a7cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "718dcaae-2c87-40e7-9906-b6e4819206ae"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2217,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-16T13:29:43.418Z",
+    "end": "2022-03-16T13:30:07.730Z",
+    "duration": 11635,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b3063c9e-dacb-45a8-a75a-809e9c987467",
+      "title": "",
+      "fullFile": "cypress/integration/examples/MyCypressTest1.js",
+      "file": "cypress/integration/examples/MyCypressTest1.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d5e8d2b8-27b7-4704-93e3-d828ccbd8655",
+          "title": "Login to Underground weather",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Launch underground weather websites to search for weather updates for my city",
+              "fullTitle": "Login to Underground weather Launch underground weather websites to search for weather updates for my city",
+              "timedOut": null,
+              "duration": 7705,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wunderground.com/login'); // launch the url\ncy.get('#form-signin-email').should('be.visible').should('be.enabled').type('maphanga1988@gmail.com'); //get element username and type input\ncy.get('#form-signin-password').should('be.visible').should('be.enabled').type('Test@123'); //get element password and type input\ncy.get('#signIn').scrollIntoView().should('be.visible', {\n  delay: 100\n}).click(); //click sign in button\n//cy.title().should('eq','Weather Underground',{ delay: 100 }) //verify home title",
+              "err": {},
+              "uuid": "284c97b3-c692-4c97-9957-f77dc5a938a7",
+              "parentUUID": "d5e8d2b8-27b7-4704-93e3-d828ccbd8655",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "284c97b3-c692-4c97-9957-f77dc5a938a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "86942da0-bdca-47dd-9865-b3ef936f6cc6",
+      "title": "",
+      "fullFile": "cypress/integration/examples/MyCypressTest2.js",
+      "file": "cypress/integration/examples/MyCypressTest2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3780f889-4095-42a8-b987-cd23ee817c90",
+          "title": " Go to nop commerce website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Launch the nop commerce website and navigate to home page",
+              "fullTitle": " Go to nop commerce website Launch the nop commerce website and navigate to home page",
+              "timedOut": null,
+              "duration": 1231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.nopcommerce.com/'); // launch the url\ncy.title().should('eq', 'nopCommerce demo store', {\n  delay: 100\n}); //verify home title",
+              "err": {},
+              "uuid": "4662784c-d000-4ca6-81e0-98c01e18cb49",
+              "parentUUID": "3780f889-4095-42a8-b987-cd23ee817c90",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Computers menu",
+              "fullTitle": " Go to nop commerce website Click on Computers menu",
+              "timedOut": null,
+              "duration": 86,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Computers').click; //click on product menu",
+              "err": {},
+              "uuid": "fc9d0d73-aa24-4e96-b42b-aa2d99b5f390",
+              "parentUUID": "3780f889-4095-42a8-b987-cd23ee817c90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4662784c-d000-4ca6-81e0-98c01e18cb49",
+            "fc9d0d73-aa24-4e96-b42b-aa2d99b5f390"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1317,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2b3ed7b7-4713-4166-8e67-0bf0153b145f",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SauceDemoTest.js",
+      "file": "cypress/integration/examples/SauceDemoTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a0e495a-c306-4f88-9dc6-60d807756578",
+          "title": "Login to sauce demo website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Login to sauce demo website",
+              "fullTitle": "Login to sauce demo website Valid Login to sauce demo website",
+              "timedOut": null,
+              "duration": 2613,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/'); //launch the URL\ncy.get('#user-name').should('be.visible').type('standard_user');\ncy.get('#password').should('be.visible').type('secret_sauce');\ncy.get('#login-button').should('be.visible', {\n  delay: 100\n}).click();\ncy.url().should('eq', 'https://www.saucedemo.com/inventory.html', {\n  delay: 200\n}); //verify you landed on home page",
+              "err": {},
+              "uuid": "d7ebe227-00f0-4c5f-95a8-e66eb0f60f85",
+              "parentUUID": "9a0e495a-c306-4f88-9dc6-60d807756578",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7ebe227-00f0-4c5f-95a8-e66eb0f60f85"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2613,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}

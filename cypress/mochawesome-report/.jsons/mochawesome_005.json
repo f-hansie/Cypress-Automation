@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-16T10:17:38.158Z",
+    "end": "2022-03-16T10:17:45.516Z",
+    "duration": 7358,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1dedb9f-71df-46fb-8387-1d9b3d0a046e",
+      "title": "",
+      "fullFile": "cypress/integration/examples/MyCypressTest1.js",
+      "file": "cypress/integration/examples/MyCypressTest1.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc399e3b-f1f8-42b0-a57f-5706db84d17e",
+          "title": "Login to Underground weather",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Launch underground weather websites to search for weather updates for my city",
+              "fullTitle": "Login to Underground weather Launch underground weather websites to search for weather updates for my city",
+              "timedOut": null,
+              "duration": 5032,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.wunderground.com/login'); // launch the url\ncy.get('#form-signin-email').should('be.visible').should('be.enabled').type('maphanga1988@gmail.com'); //get element username and type input\ncy.get('#form-signin-password').should('be.visible').should('be.enabled').type('Test@123'); //get element password and type input\ncy.get('#signIn').scrollIntoView().should('be.visible', {\n  delay: 100\n}).click(); //click sign in button\n//cy.title().should('eq','Weather Underground',{ delay: 100 }) //verify home title",
+              "err": {},
+              "uuid": "562c9adf-7b6e-4419-a643-a0997120ef42",
+              "parentUUID": "dc399e3b-f1f8-42b0-a57f-5706db84d17e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "562c9adf-7b6e-4419-a643-a0997120ef42"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5032,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}
