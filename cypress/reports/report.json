@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-03-22T19:33:10.314Z",
-    "end": "2022-03-22T19:33:19.470Z",
-    "duration": 9156,
+    "start": "2022-03-24T18:34:40.577Z",
+    "end": "2022-03-24T18:34:49.330Z",
+    "duration": 8753,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d4dcd89f-f135-445d-85f9-76340f4d9a6a",
+      "uuid": "f91d4d47-68ca-4e12-973f-6814bb3d9c2f",
       "title": "",
       "fullFile": "cypress/integration/examples/SauceDemoTest.js",
       "file": "cypress/integration/examples/SauceDemoTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d8b010b1-0660-45fc-800e-aaf1e25349ba",
+          "uuid": "39ab1168-3258-42e4-9125-2ae814bb85ac",
           "title": "Login to sauce demo website",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Valid Login to sauce demo website",
               "fullTitle": "Login to sauce demo website Valid Login to sauce demo website",
               "timedOut": null,
-              "duration": 6223,
+              "duration": 5638,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://www.saucedemo.com/'); //launch the URL\ncy.get('#user-name').should('be.visible').type('standard_user');\ncy.get('#password').should('be.visible').type('secret_sauce');\ncy.get('#login-button').should('be.visible', {\n  delay: 100\n}).click();\ncy.wait(3000);\ncy.url().should('eq', 'https://www.saucedemo.com/inventory.html', {\n  delay: 200\n}); //verify you landed on home page",
               "err": {},
-              "uuid": "a2c2be13-3135-464d-99dd-b8faa0e18be0",
-              "parentUUID": "d8b010b1-0660-45fc-800e-aaf1e25349ba",
+              "uuid": "ba69f4ae-3785-4501-8bba-ec9c634c5c09",
+              "parentUUID": "39ab1168-3258-42e4-9125-2ae814bb85ac",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a2c2be13-3135-464d-99dd-b8faa0e18be0"
+            "ba69f4ae-3785-4501-8bba-ec9c634c5c09"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6223,
+          "duration": 5638,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

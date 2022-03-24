@@ -6,12 +6,17 @@
       "json": true,
       "reportDir": "cypress/reports",
       "reportFilename": "report",
-      "overwrite": true 
+      "overwrite": true
+       
     },
 
+    "pageLoadTimeout": 100000,
+  
   "chromeWebSecurity": false, 
   "video": false,
   "projectId": "isakfj"
+
+  
 
   
 }
