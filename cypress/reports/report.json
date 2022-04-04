@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
+    "tests": 2,
     "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-03-24T18:34:40.577Z",
-    "end": "2022-03-24T18:34:49.330Z",
-    "duration": 8753,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2022-04-03T16:56:02.250Z",
+    "end": "2022-04-03T16:56:16.528Z",
+    "duration": 14278,
+    "testsRegistered": 2,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,73 @@
   },
   "results": [
     {
-      "uuid": "f91d4d47-68ca-4e12-973f-6814bb3d9c2f",
+      "uuid": "e4a78c1e-7fa0-4005-b85a-00187367c908",
       "title": "",
-      "fullFile": "cypress/integration/examples/SauceDemoTest.js",
-      "file": "cypress/integration/examples/SauceDemoTest.js",
+      "fullFile": "cypress/integration/examples/investecWebsiteUIAutomation.js",
+      "file": "cypress/integration/examples/investecWebsiteUIAutomation.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "39ab1168-3258-42e4-9125-2ae814bb85ac",
-          "title": "Login to sauce demo website",
+          "uuid": "2253b57d-d5b6-4a14-9f49-c23f387b2347",
+          "title": "Launch investec website",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Valid Login to sauce demo website",
-              "fullTitle": "Login to sauce demo website Valid Login to sauce demo website",
+              "title": "Navigate to:Understanding cash investment interest rates",
+              "fullTitle": "Launch investec website Navigate to:Understanding cash investment interest rates",
               "timedOut": null,
-              "duration": 5638,
+              "duration": 11118,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/'); //launch the URL\ncy.get('#user-name').should('be.visible').type('standard_user');\ncy.get('#password').should('be.visible').type('secret_sauce');\ncy.get('#login-button').should('be.visible', {\n  delay: 100\n}).click();\ncy.wait(3000);\ncy.url().should('eq', 'https://www.saucedemo.com/inventory.html', {\n  delay: 200\n}); //verify you landed on home page",
+              "code": "const investec = new _investec_home_page.default(); //launch url\ninvestec.visit(); //click search icon\n// investec.clickSearchIcon()\n//enter text on search input\n// investec.searchTextInput('Understanding cash investment interest rates')\n//click on search result\n// investec.clickSearchResults()",
               "err": {},
-              "uuid": "ba69f4ae-3785-4501-8bba-ec9c634c5c09",
-              "parentUUID": "39ab1168-3258-42e4-9125-2ae814bb85ac",
+              "uuid": "ca9e3933-f63a-457c-8e34-ccb3345ffb52",
+              "parentUUID": "2253b57d-d5b6-4a14-9f49-c23f387b2347",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "sign-up to receive focus insights straight to your inbox",
+              "fullTitle": "Launch investec website sign-up to receive focus insights straight to your inbox",
+              "timedOut": null,
+              "duration": 681,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/examples/investecWebsiteUIAutomation.js/Launch investec website -- sign-up to receive focus insights straight to your inbox (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "const investec = new _investec_home_page.default(); //click sign up button\ninvestec.clickSignUp(); //enter name\ninvestec.fillName('Hansie'); //enter surname\ninvestec.fillSurname('Maphanga'); //enter email\ninvestec.fillEmail('test@investec.co.za '); //select checkbox\ninvestec.selectMyselfCheckbox(); //click submit\ninvestec.clickSubmit();",
+              "err": {
+                "message": "ReferenceError: emailField is not defined",
+                "estack": "ReferenceError: emailField is not defined\n    at investecHomePage.fillName (https://www.investec.com/__cypress/tests?p=cypress/integration/examples/investecWebsiteUIAutomation.js:154:5)\n    at Context.eval (https://www.investec.com/__cypress/tests?p=cypress/integration/examples/investecWebsiteUIAutomation.js:220:14)",
+                "diff": null
+              },
+              "uuid": "7762137f-a6e7-4b81-b8ca-0ee9efdf3b97",
+              "parentUUID": "2253b57d-d5b6-4a14-9f49-c23f387b2347",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ba69f4ae-3785-4501-8bba-ec9c634c5c09"
+            "ca9e3933-f63a-457c-8e34-ccb3345ffb52"
           ],
-          "failures": [],
+          "failures": [
+            "7762137f-a6e7-4b81-b8ca-0ee9efdf3b97"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 5638,
+          "duration": 11799,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

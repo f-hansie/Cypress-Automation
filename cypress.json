@@ -10,8 +10,9 @@
        
     },
 
-    "pageLoadTimeout": 100000,
+  "pageLoadTimeout": 100000,
   
+  "experimentalFetchPolyfill": true,
   "chromeWebSecurity": false, 
   "video": false,
   "projectId": "isakfj"
