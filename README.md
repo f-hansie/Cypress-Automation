@@ -23,7 +23,7 @@ investec_UI_assessment: run web UI functional test on https://www.investec.com/ 
 
 - > clone the project from https://github.com/f-hansie/Cypress-Automation.git
 - > The test class to execute is located on this path:/cypress/integration/examples/investecWebsiteUIAutomation.js
-- > To run the test runner execute the following command on the terminal './node_modules/.bin/cypress open'
+- > To open the test runner execute the following command on the terminal './node_modules/.bin/cypress open'
 - > Then click on investecWebsiteUIAutomation to execute the test
 - > If the test fails screenshot will be saved screenshots folder from the project structure
 - > To access the html report open the project from folder you saved and open test report folder and select any browser of your choice to view the report results
